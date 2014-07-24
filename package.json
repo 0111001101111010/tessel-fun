@@ -1,0 +1,22 @@
+{
+  "name": "tessel-fun",
+  "version": "0.0.0",
+  "description": "Tessel Fun ========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stanzheng/tessel-fun.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stanzheng/tessel-fun/issues"
+  },
+  "homepage": "https://github.com/stanzheng/tessel-fun",
+  "dependencies": {
+    "tessel": "^0.3.8"
+  }
+}

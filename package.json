@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/stanzheng/tessel-fun",
   "dependencies": {
+    "moment": "^2.7.0",
     "tessel": "^0.3.8"
   }
 }

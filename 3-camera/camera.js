@@ -14,10 +14,11 @@ var camera = require('camera-vc0706').use(tessel.port['A']);
 var notificationLED = tessel.led[3]; // Set up an LED to notify when we're taking a picture
 
 // Wait for the camera module to say it's ready
+
 camera.on('ready', function() {
-  setInterval( function(){
     notificationLED.high();
     // Take the picture
+setInterval( function(){
     camera.takePicture(function(err, image) {
       if (err) {
         console.log('error taking image', err);
@@ -29,11 +30,11 @@ camera.on('ready', function() {
         console.log('Picture saving as', name, '...');
         process.sendfile(name, image);
         console.log('done.');
-        // Turn the camera off to end the script
-        camera.disable();
+        // // Turn the camera off to end the script
+        // camera.disable();
       }
-  },5000);
   });
+},5000);
 });
 
 camera.on('error', function(err) {

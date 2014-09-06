@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/stanzheng/tessel-fun",
   "dependencies": {
+    "dotenv": "^0.4.0",
     "moment": "^2.7.0",
     "tessel": "^0.3.8"
   }

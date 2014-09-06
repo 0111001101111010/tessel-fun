@@ -7,11 +7,10 @@ var tessel = require('tessel'),
   interval = 6000, // 6 seconds
   notificationLED = tessel.led[3];
 
-var camera = require('camera-vc0706').use(tessel.port['A'], {
+var camera = require('camera-vc0706').use(tessel.port.A, {
   compression: 0.2,
   resolution: 'vga'
 });
-// 
 // var dotenv = require('dotenv');
 // // load the spark token and device id from .env file
 // dotenv.load();
